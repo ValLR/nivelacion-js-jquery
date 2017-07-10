@@ -17,11 +17,10 @@ function renderHighlightedRecipes(recipesArray) {
 	var matches = $.grep(recipesArray, function(n,i){
 		return (n.highlighted===true);
 	})
-	console.log(matches)
+
+	renderRecipe(matches);
 	console.log('Recipes: ', recipesArray);
 }
-/*función para buscar atributos*/
-
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
