@@ -46,7 +46,7 @@ function renderActivities(activitiesArray) {
 	if (activitiesArray.length > 0){
 		$(".wrapper-message").hide();
 	}
-	console.log('Activities: ', activitiesArray);
+	console.log('Activities: ',activitiesArray);
 }
 
 /*
