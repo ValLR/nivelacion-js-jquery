@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("#imenu-container").hide();
 	console.log("it's ready, bae")
 	$(".js-show-recipe").click(function(){
 		$("#bod").removeClass("make");
