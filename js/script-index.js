@@ -17,7 +17,7 @@ function renderHighlightedRecipes(recipesArray) {
 	var matches = $.grep(recipesArray, function(n,i){
 		return (n.highlighted===true);
 	})
-	$(".list-recipes").append("<a class='item-recipe' href='#'></a>")
+
 	matches.forEach(renderRecipe);
 
 	console.log('Recipes: ', recipesArray);
@@ -30,6 +30,8 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
+
+	$(".list-recipes").append("<a class='item-recipe' href='#'><span class='attribution'><span class='title-recipe'>"+ $(recipe).attr("title") +"</span><span class='metadata-recipe'><span class='author-recipe'>"+ $(recipe).attr("name") +"</span><span class='bookmarks-recipe'><span class='icon-bookmark'></span></span></span></span><img src= 'img/recipes/320x350/"+ $(recipe).attr("name") +".jpg'></a>")
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
