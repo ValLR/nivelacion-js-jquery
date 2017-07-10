@@ -14,11 +14,14 @@ $(document).ready( function(){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	for(var i=0; i < recipesArray.length; i++){
-		if(recipesArray[i])
-	}
+	var matches = $.grep(recipesArray, function(n,i){
+		return (n.highlighted===true);
+	})
+	console.log(matches)
 	console.log('Recipes: ', recipesArray);
 }
+/*función para buscar atributos*/
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
