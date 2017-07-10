@@ -17,8 +17,9 @@ function renderHighlightedRecipes(recipesArray) {
 	var matches = $.grep(recipesArray, function(n,i){
 		return (n.highlighted===true);
 	})
+	$(".list-recipes").append("<a class='item-recipe' href='#'></a>")
+	matches.forEach(renderRecipe);
 
-	renderRecipe(matches);
 	console.log('Recipes: ', recipesArray);
 }
 
