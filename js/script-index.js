@@ -42,7 +42,10 @@ function renderRecipe(recipe) {
 * Función que se encarga de pintar todas las actividades
 */
 function renderActivities(activitiesArray) {
-
+	activitiesArray.forEach(renderActivity);
+	if (activitiesArray.length > 0){
+		$(".wrapper-message").hide();
+	}
 	console.log('Activities: ', activitiesArray);
 }
 
