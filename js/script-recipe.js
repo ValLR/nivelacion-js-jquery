@@ -11,5 +11,9 @@ $(document).ready(function(){
 		$(".js-show-make").addClass("active");
 		$(".js-show-remove").removeClass("active");
 			})
+/*forma alternativa de asignarle una funcionalidad a la flecha*/
+	$(".flesha").attr("href","index.html")
+	
+
 
 });
