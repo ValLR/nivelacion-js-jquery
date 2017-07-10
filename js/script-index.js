@@ -1,10 +1,11 @@
 $(document).ready( function(){
 	$("#arrow-container").hide();
 	$("#imenu-container").hide();
-	$("#print-news").append("NUEVAS RECETAS")
+	$("#print-news").append("NUEVAS RECETAS");
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	renderActivities(activitiesArray);
 
 });
 
@@ -41,6 +42,7 @@ function renderRecipe(recipe) {
 * Función que se encarga de pintar todas las actividades
 */
 function renderActivities(activitiesArray) {
+
 	console.log('Activities: ', activitiesArray);
 }
 
