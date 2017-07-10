@@ -1,4 +1,4 @@
-$(document).ready( function(){
+$(document).ready(function(){
 	$("#arrow-container").hide();
 	$("#imenu-container").hide();
 	$("#print-news").append("NUEVAS RECETAS");
